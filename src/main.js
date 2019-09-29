@@ -1,18 +1,19 @@
 import Vue from 'vue'
 
+// router 和 store
 import router from './router'
 import store from './store'
 
-import axios from 'axios'
-import VueAxios from 'vue-axios'
-
+// App 主界面
 import App from './App.vue'
 
-Vue.config.productionTip = false
+// element
+import './plugins/element.js'
 
-axios.defaults.baseURL = ""
-Vue.use(VueAxios, axios)
-// Vue.prototype.$axios = axios
+// axios
+import './axios.js'
+
+Vue.config.productionTip = false
 
 new Vue({
   router,
